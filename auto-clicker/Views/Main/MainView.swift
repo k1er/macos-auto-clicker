@@ -48,6 +48,19 @@ struct MainView: View {
         self.delayTimer.stop()
         self.autoClickSimulator.stop()
     }
+    
+    func ocr() {
+        
+        if let location = findTextLocation("TEST") {
+            print("文字坐标: \(location)")
+        } else {
+            print("未找到文字")
+        }
+    }
+    
+    func test() {
+        print("rudy test")
+    }
 
     func registerKeyboardShortcuts() {
         KeyboardShortcuts.onKeyUp(for: .pressStartButton) { [self] in
@@ -162,6 +175,23 @@ struct MainView: View {
 
                     KeyboardShortcutHint(shortcut: KeyboardShortcuts.Name.pressStopButton.shortcut ?? KeyboardShortcuts.Name.pressStopButton.defaultShortcut!)
                 }
+                VStack {
+                    Button(action: self.ocr) {
+                        Text("main_window_ocr_btn", comment: "Main window ocr button").kerning(1)
+                    }
+                    .buttonStyle(ThemedButtonStyle())
+
+                    KeyboardShortcutHint(shortcut: KeyboardShortcuts.Name.pressStopButton.shortcut ?? KeyboardShortcuts.Name.pressStopButton.defaultShortcut!)
+                }
+                VStack {
+                    Button(action: self.test) {
+                        Text("main_window_test_btn", comment: "Main window test button").kerning(1)
+                    }
+                    .buttonStyle(ThemedButtonStyle())
+
+                    KeyboardShortcutHint(shortcut: KeyboardShortcuts.Name.pressStopButton.shortcut ?? KeyboardShortcuts.Name.pressStopButton.defaultShortcut!)
+                }
+
 
                 Spacer()
             }

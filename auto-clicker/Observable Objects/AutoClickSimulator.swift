@@ -142,6 +142,7 @@ final class AutoClickSimulator: ObservableObject {
         let mouseY = NSHeight(NSScreen.screens[0].frame) - mouseLocation.y
 
         let clickingAtPoint = CGPoint(x: mouseX, y: mouseY)
+//        let clickingAtPoint = CGPoint(x: 680+32, y: 477+12)
 
         let mouseDownType: CGEventType = mouseDownEventMap[self.input.type]!
         let mouseUpType: CGEventType = mouseUpEventMap[self.input.type]!
@@ -159,6 +160,8 @@ final class AutoClickSimulator: ObservableObject {
 
         return [mouseDown, mouseUp]
     }
+    
+    
 
     private func generateKeyPressEvents(source: CGEventSource?) -> [CGEvent?] {
         let keyDown = CGEvent(keyboardEventSource: source,

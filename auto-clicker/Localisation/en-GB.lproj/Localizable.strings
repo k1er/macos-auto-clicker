@@ -21,6 +21,8 @@
 "main_window_before_starting"         = " before starting";
 "main_window_start_btn"               = "START";
 "main_window_stop_btn"                = "STOP";
+"main_window_ocr_btn"                = "OCR";
+"main_window_test_btn"                = "TEST";
 "main_window_stat_box_next_press_at"  = "NEXT PRESS AT";
 "main_window_stat_box_final_press_at" = "FINAL PRESS AT";
 "main_window_repo_vanity"             = "with ♥️ by Othyn";

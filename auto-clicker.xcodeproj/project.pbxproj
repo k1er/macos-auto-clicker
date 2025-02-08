@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4C5D699D2A4ECDF800E72CEE /* NotificationsSettingsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5D699C2A4ECDF800E72CEE /* NotificationsSettingsTabView.swift */; };
 		4C5D699F2A4EED3500E72CEE /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5D699E2A4EED3500E72CEE /* NotificationService.swift */; };
+		93AB22A12D57301B00EFE8B6 /* Ocr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AB22A02D57301B00EFE8B6 /* Ocr.swift */; };
 		B50022CA2875F5BF00610474 /* HelpCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50022C92875F5BF00610474 /* HelpCommands.swift */; };
 		B510760927F4A21500BB1CDA /* DateStrings in Frameworks */ = {isa = PBXBuildFile; productRef = B510760827F4A21500BB1CDA /* DateStrings */; };
 		B510760C27F4A23300BB1CDA /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = B510760B27F4A23300BB1CDA /* KeyboardShortcuts */; };
@@ -79,6 +80,7 @@
 /* Begin PBXFileReference section */
 		4C5D699C2A4ECDF800E72CEE /* NotificationsSettingsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsSettingsTabView.swift; sourceTree = "<group>"; };
 		4C5D699E2A4EED3500E72CEE /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		93AB22A02D57301B00EFE8B6 /* Ocr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ocr.swift; sourceTree = "<group>"; };
 		B50022C92875F5BF00610474 /* HelpCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpCommands.swift; sourceTree = "<group>"; };
 		B510760E27F4A25400BB1CDA /* WindowStateService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowStateService.swift; sourceTree = "<group>"; };
 		B510761027F4A33D00BB1CDA /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 				B5462E732A6173D400C5F280 /* AboutView.swift */,
 				B5B6B46228032D3200C779FD /* PermissionsView.swift */,
 				B5F6A00E27F37440003CD730 /* MainView.swift */,
+				93AB22A02D57301B00EFE8B6 /* Ocr.swift */,
 				B5E6395127CA62DE008B111A /* Styles */,
 				B598440B264C43AE0021C3F6 /* Components */,
 			);
@@ -563,6 +566,7 @@
 				B5E92B1827F10A9E00A7FC63 /* UnderlinedStyleDivider.swift in Sources */,
 				B510763B2800DDFF00BB1CDA /* NSEvent+Extensions.swift in Sources */,
 				4C5D699F2A4EED3500E72CEE /* NotificationService.swift in Sources */,
+				93AB22A12D57301B00EFE8B6 /* Ocr.swift in Sources */,
 				B510763227FF7EC800BB1CDA /* InputAwareView.swift in Sources */,
 				B5B6B46328032D3200C779FD /* PermissionsView.swift in Sources */,
 				B510762327F4BB5F00BB1CDA /* KeyboardShortcutsSettingsTabView.swift in Sources */,
@@ -774,7 +778,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"auto-clicker/Preview Content\"";
-				DEVELOPMENT_TEAM = ZN3SU624TP;
+				DEVELOPMENT_TEAM = U66UA73KTE;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -806,7 +810,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"auto-clicker/Preview Content\"";
-				DEVELOPMENT_TEAM = ZN3SU624TP;
+				DEVELOPMENT_TEAM = U66UA73KTE;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
