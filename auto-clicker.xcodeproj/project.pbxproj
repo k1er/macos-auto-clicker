@@ -10,6 +10,8 @@
 		4C5D699D2A4ECDF800E72CEE /* NotificationsSettingsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5D699C2A4ECDF800E72CEE /* NotificationsSettingsTabView.swift */; };
 		4C5D699F2A4EED3500E72CEE /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5D699E2A4EED3500E72CEE /* NotificationService.swift */; };
 		93AB22A12D57301B00EFE8B6 /* Ocr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AB22A02D57301B00EFE8B6 /* Ocr.swift */; };
+		93AB3A942D59E32300EFE8B6 /* OpenCV in Frameworks */ = {isa = PBXBuildFile; productRef = 93AB3A932D59E32300EFE8B6 /* OpenCV */; };
+		93AB3A962D59F41C00EFE8B6 /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AB3A952D59F41C00EFE8B6 /* Flow.swift */; };
 		B50022CA2875F5BF00610474 /* HelpCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50022C92875F5BF00610474 /* HelpCommands.swift */; };
 		B510760927F4A21500BB1CDA /* DateStrings in Frameworks */ = {isa = PBXBuildFile; productRef = B510760827F4A21500BB1CDA /* DateStrings */; };
 		B510760C27F4A23300BB1CDA /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = B510760B27F4A23300BB1CDA /* KeyboardShortcuts */; };
@@ -81,6 +83,7 @@
 		4C5D699C2A4ECDF800E72CEE /* NotificationsSettingsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsSettingsTabView.swift; sourceTree = "<group>"; };
 		4C5D699E2A4EED3500E72CEE /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		93AB22A02D57301B00EFE8B6 /* Ocr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ocr.swift; sourceTree = "<group>"; };
+		93AB3A952D59F41C00EFE8B6 /* Flow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flow.swift; sourceTree = "<group>"; };
 		B50022C92875F5BF00610474 /* HelpCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpCommands.swift; sourceTree = "<group>"; };
 		B510760E27F4A25400BB1CDA /* WindowStateService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowStateService.swift; sourceTree = "<group>"; };
 		B510761027F4A33D00BB1CDA /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -152,6 +155,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93AB3A942D59E32300EFE8B6 /* OpenCV in Frameworks */,
 				B510762827F4BD5500BB1CDA /* Defaults in Frameworks */,
 				B510760927F4A21500BB1CDA /* DateStrings in Frameworks */,
 				B5A042552CB298CC000A1E39 /* LaunchAtLogin in Frameworks */,
@@ -192,6 +196,7 @@
 				B5B6B46228032D3200C779FD /* PermissionsView.swift */,
 				B5F6A00E27F37440003CD730 /* MainView.swift */,
 				93AB22A02D57301B00EFE8B6 /* Ocr.swift */,
+				93AB3A952D59F41C00EFE8B6 /* Flow.swift */,
 				B5E6395127CA62DE008B111A /* Styles */,
 				B598440B264C43AE0021C3F6 /* Components */,
 			);
@@ -435,6 +440,7 @@
 				B510760B27F4A23300BB1CDA /* KeyboardShortcuts */,
 				B510762727F4BD5500BB1CDA /* Defaults */,
 				B5A042542CB298CC000A1E39 /* LaunchAtLogin */,
+				93AB3A932D59E32300EFE8B6 /* OpenCV */,
 			);
 			productName = "auto-clicker";
 			productReference = B53BDC4C264BED93001F8E57 /* AutoClicker.app */;
@@ -469,6 +475,7 @@
 				B510760A27F4A23300BB1CDA /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
 				B510762627F4BD5500BB1CDA /* XCRemoteSwiftPackageReference "Defaults" */,
 				B5A042532CB298CC000A1E39 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */,
+				93AB3A922D59E32300EFE8B6 /* XCRemoteSwiftPackageReference "opencv-spm" */,
 			);
 			productRefGroup = B53BDC4D264BED93001F8E57 /* Products */;
 			projectDirPath = "";
@@ -599,6 +606,7 @@
 				B510762D27F4BF0C00BB1CDA /* Defaults+Workaround.swift in Sources */,
 				B510761627F4A43B00BB1CDA /* GeneralSettingsTabView.swift in Sources */,
 				B510761827F4A58500BB1CDA /* KeyboardShortcuts.swift in Sources */,
+				93AB3A962D59F41C00EFE8B6 /* Flow.swift in Sources */,
 				B510763527FF811B00BB1CDA /* PressKeyListenerModal.swift in Sources */,
 				B53027FA264C2748002B8610 /* DelayTimer.swift in Sources */,
 				B5E6395627CA76CB008B111A /* Duration.swift in Sources */,
@@ -773,6 +781,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "auto-clicker/Build Assets/auto_clicker.entitlements";
 				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -789,7 +798,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.7.28;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.othyn.auto-clicker";
 				PRODUCT_NAME = AutoClicker;
@@ -805,6 +814,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "auto-clicker/Build Assets/auto_clicker.entitlements";
 				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -821,7 +831,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.7.28;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.othyn.auto-clicker";
 				PRODUCT_NAME = AutoClicker;
@@ -854,6 +864,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		93AB3A922D59E32300EFE8B6 /* XCRemoteSwiftPackageReference "opencv-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yeatse/opencv-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.11.0;
+			};
+		};
 		B510760727F4A21500BB1CDA /* XCRemoteSwiftPackageReference "DateStrings" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/othyn/DateStrings";
@@ -889,6 +907,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		93AB3A932D59E32300EFE8B6 /* OpenCV */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 93AB3A922D59E32300EFE8B6 /* XCRemoteSwiftPackageReference "opencv-spm" */;
+			productName = OpenCV;
+		};
 		B510760827F4A21500BB1CDA /* DateStrings */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B510760727F4A21500BB1CDA /* XCRemoteSwiftPackageReference "DateStrings" */;

@@ -38,10 +38,12 @@ struct MainView: View {
     }
 
     func start() {
-        if !self.hasStarted {
-            self.delayTimer.start(onFinish: self.autoClickSimulator.start)
-            MenuBarService.changeImageColour(newColor: .systemOrange)
-        }
+//        if !self.hasStarted {
+//            self.delayTimer.start(onFinish: self.autoClickSimulator.start)
+//            MenuBarService.changeImageColour(newColor: .systemOrange)
+//        }
+        
+        ocr()
     }
 
     func stop() {
@@ -50,12 +52,30 @@ struct MainView: View {
     }
     
     func ocr() {
-        
-        if let location = findTextLocation("TEST") {
-            print("文字坐标: \(location)")
-        } else {
-            print("未找到文字")
+        Task {
+            if let rect =  try? await findTextLocation("文档") {
+                
+                CGWarpMouseCursorPosition(CGPoint(x: CGRectGetMidX(rect), y: CGRectGetMinY(rect)))
+                print("文字坐标: \(rect)")
+            } else {
+                print("未找到文字")
+            }
         }
+        
+//        Task {
+//            try? await takeScreenshot("com.tencent.WeWorkMac")
+//        }
+        
+//        guard let iconImage = NSImage(contentsOfFile: "/Users/rudy/Desktop/plus.png") else {
+//            print("未找到图片")
+//            return
+//        }
+//        
+//        if let location = findIconLocation(iconImage: iconImage) {
+//            print("图标坐标: \(location)")
+//        } else {
+//            print("未找到图标")
+//        }
     }
     
     func test() {
